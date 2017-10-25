@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  public playerPos:Array<Object> = [
+    {x: 50, y: 50, color:'red'},
+    {x: 50, y: 100, color:'green'},
+    {x: 100, y: 50, color:'blue'},
+    {x: 100, y: 100, color:'yellow'}
+  ];
 }

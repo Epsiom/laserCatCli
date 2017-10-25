@@ -190,27 +190,7 @@ l-47 -11 -113 119 c-105 111 -114 122 -108 150 12 55 10 79 -8 83 -9 2 -18 -1
 
     <path id="motionPath2" fill="none" stroke="none" stroke-miterlimit="10" d="M 300 200 Q 400 100 500 200 Q 600 400 500 400 Q 350 450 300 400 Q 200 300 300 200 "/>
 
-
-    <circle id="circle" r="10" cx="0" cy="0" fill="tomato" />
-    <circle id="circle2" r="10" cx="0" cy="0" fill="blue" />
-
-    <animateMotion
-      xlink:href="#circle"
-      dur="5s"
-      begin="0s"
-      fill="freeze"
-      repeatCount="indefinite">
-      <mpath xlink:href="#motionPath" />
-    </animateMotion>
-
-    <animateMotion
-      xlink:href="#circle2"
-      dur="5s"
-      begin="0s"
-      fill="freeze"
-      repeatCount="indefinite">
-      <mpath xlink:href="#motionPath2" />
-    </animateMotion>
+    <circle *ngFor="let player of playerPos" id="circle" r="10" [attr.cx]="player.x" [attr.cy]="player.y" [attr.fill]="player.color" />
 
   </svg>
 </div>
