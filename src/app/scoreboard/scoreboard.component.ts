@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ScoreboardComponent implements OnInit {
 
   public playerStats:Array<Object> = [
-    {nickname: 'player1', kills: 25, deaths: 5, color:'red'},
-    {nickname: 'player2', kills: 20, deaths: 8, color:'red'},
-    {nickname: 'player3', kills: 8, deaths: 12, color:'blue'},
-    {nickname: 'player4', kills: 4, deaths: 27, color:'blue'}
+    {nickname: 'player1', kills: 25, deaths: 5, team:'red'},
+    {nickname: 'player2', kills: 20, deaths: 8, team:'green'},
+    {nickname: 'player3', kills: 8, deaths: 12, team:'blue'},
+    {nickname: 'player4', kills: 4, deaths: 27, team:'yellow'}
   ];
 
   constructor() { }
