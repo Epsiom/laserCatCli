@@ -1,0 +1,11 @@
+<div>
+<table>
+<th>Player name</th><th>Kills</th><th>Deaths</th><th>Team</th>
+<tr *ngFor="let player of playerStats">
+  <td id='nickname'>{{player.nickname}}</td>
+  <td id='kills'>{{player.kills}}</td>
+  <td id='deaths'>{{player.deaths}}</td>
+  <td id='color'>{{player.color}}</td>
+</tr>
+</table>
+</div>
